@@ -1,0 +1,17 @@
+.a-join-team > .a-title {
+  font-size: 34px;
+  line-height: 34px;
+}
+
+.a-join-team > .a-input {
+  display: block;
+  margin: 10px 0;
+}
+
+.a-join-team > .a-button {
+  width: 100%;
+}
+
+.a-join-team > .a--error {
+  margin: 10px 0;
+}

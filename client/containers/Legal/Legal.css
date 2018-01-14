@@ -1,0 +1,25 @@
+.a-legal {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.a-legal .a-title {
+  margin: 20px 0;
+}
+
+.a-legal h4 {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.a-legal .a-text,
+.a-legal ul {
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.a-legal ul {
+  margin: 1em auto;
+}

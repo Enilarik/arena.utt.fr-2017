@@ -1,0 +1,76 @@
+@import '../../theme.css';
+
+.a-button {
+  border: 0;
+  box-sizing: border-box;
+  background: color(var(--white) a(20%));
+  box-shadow: 0 0 12px 0 color(var(--black) a(30%)),
+        inset 0 0 0 1px color(var(--black) a(60%)),
+        inset 0 0 0 2px color(var(--white) a(20%));
+  cursor: pointer;
+  font-family: Impact, sans-serif;
+  font-size: 21px;
+  height: 40px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  min-width: 175px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.a-motion-loaded .a-button {
+  font-family: MotionControl, Impact, sans-serif;
+  font-size: 26px;
+  letter-spacing: 0;
+}
+
+.a-button--medium {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.a-motion-loaded .a-button {
+  font-family: MotionControl, Impact, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.a-button--big {
+  background: var(--orange);
+  box-shadow: 0 0 12px 0 color(var(--black) a(30%)),
+        inset 0 0 0 1px color(var(--black) a(60%)),
+        inset 0 0 0 2px color(var(--white) a(10%));
+  font-size: 48px !important;
+  height: 80px;
+  line-height: 48px !important;
+  min-width: 270px;
+}
+
+.a-button--orange {
+  background: var(--orange);
+  color: var(--black);
+  box-shadow: 0 0 12px 0 color(var(--black) a(30%)),
+        inset 0 0 0 1px color(var(--black) a(60%));
+}
+
+.a-button--blue {
+  background: var(--cyan);
+  color: var(--black);
+  box-shadow: 0 0 12px 0 color(var(--black) a(30%)),
+        inset 0 0 0 1px color(var(--black) a(60%));
+}
+
+.a-button--success {
+  background: color(var(--success) s(-30%));
+  color: var(--black);
+  box-shadow: 0 0 12px 0 color(var(--black) a(30%)),
+        inset 0 0 0 1px color(var(--white) a(60%));
+}
+
+.a-button--error {
+  background: color(var(--failure) s(-30%));
+  color: var(--white);
+  box-shadow: 0 0 12px 0 color(var(--black) a(30%)),
+        inset 0 0 0 1px color(var(--white) a(60%));
+}

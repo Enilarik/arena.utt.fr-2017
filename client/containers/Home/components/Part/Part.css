@@ -1,0 +1,22 @@
+@import '../../../../theme.css';
+
+.a-part {
+  padding: 15px;
+}
+
+.a-part__content {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@media (--medium) {
+  .a-part {
+    padding: 50px 60px;
+  }
+}
+
+@media (--large) {
+  .a-part {
+    padding: 100px 120px;
+  }
+}

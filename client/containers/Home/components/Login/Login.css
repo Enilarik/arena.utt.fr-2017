@@ -1,0 +1,54 @@
+@import '../../../../theme.css';
+
+.a-login,
+.a-register {
+  box-sizing: border-box;
+  max-width: 300px;
+}
+
+.a-login-form > .a-title,
+.a-register-form > .a-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.a-login-form > .a-input,
+.a-register-form > .a-input {
+  margin-bottom: 20px;
+  width: 240px;
+}
+
+.a-login-form__footer,
+.a-register-form__footer {
+  display: flex;
+  align-items: center;
+}
+
+.a-login-form__footer .a-button,
+.a-register-form__footer .a-button {
+  min-width: 0;
+}
+
+.a-register-form__agree {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+@media (--medium) {
+  .a-login,
+  .a-register {
+    max-width: 350px;
+  }
+
+  .a-login-form > .a-input,
+  .a-register-form > .a-input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
+
+  .a-login-form__footer .a-button,
+  .a-register-form__footer .a-button {
+    min-width: 175px;
+  }
+}

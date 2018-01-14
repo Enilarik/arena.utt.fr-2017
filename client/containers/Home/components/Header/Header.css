@@ -1,0 +1,52 @@
+@import '../../../../theme.css';
+
+.a-intro-header {
+  border-bottom: 1px solid var(--grey);
+  box-shadow: inset 0 0 10px var(--black);
+  box-sizing: border-box;
+  height: 60px;
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+  z-index: 400;
+}
+
+.a-intro-header__background {
+  background-image: url('../../../../assets/intro-blurred.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.a-intro-header__nav {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  z-index: 400;
+}
+
+.a-intro-header .a-button:not(.a-button--orange) {
+  display: none;
+}
+
+@media (--large) {
+  .a-intro-header__nav > .a-button:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  .a-intro-header .a-button:not(.a-button--orange) {
+    display: block;
+  }
+}
+
+@media (--extralarge) {
+  .a-intro-header__nav > .a-button:not(:first-child) {
+    margin-left: 20px;
+  }
+}

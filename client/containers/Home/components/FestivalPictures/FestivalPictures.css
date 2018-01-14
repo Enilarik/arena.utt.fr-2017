@@ -1,0 +1,39 @@
+@import '../../../../theme.css';
+
+.a-festival-pictures {
+  padding: 10px 0;
+}
+
+.a-festival-pictures__row {
+  height: 250px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.a-festival-pictures__row > img,
+.a-festival-pictures__row > div {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media (--medium) {
+  .a-festival-pictures__row {
+    height: 350px;
+  }
+}
+
+@media (--large) {
+  .a-festival-pictures {
+    padding: 30px 0;
+  }
+
+  .a-festival-pictures__row {
+    height: 400px;
+  }
+}
+
+@media (--extralarge) {
+  .a-festival-pictures__row {
+    height: 500px;
+  }
+}

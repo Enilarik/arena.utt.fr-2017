@@ -1,0 +1,55 @@
+@import '../../theme.css';
+
+.a-checkbox__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.a-checkbox__label {
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  padding: 0;
+  position: relative;
+}
+
+/* Box */
+.a-checkbox__label:before {
+  background: color(var(--blue) a(0.4));
+  border-radius: 2px;
+  border: 1px solid var(--grey);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0, .5);
+  content: '';
+  display: inline-block;
+  height: 20px;
+  margin-bottom: -3px;
+  margin-right: 10px;
+  width: 20px;
+}
+
+/* Box hover */
+.a-checkbox__label:hover:before {
+  background: color(var(--blue) l(+10));
+}
+
+/* Box focus */
+.a-checkbox__input:focus + .a-checkbox__label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Box checked */
+.a-checkbox__input:checked + .a-checkbox__label:before {
+  background: color(var(--blue) l(+10));
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Checkmark */
+.a-checkbox__input:checked + .a-checkbox__label:after {
+  color: var(--success);
+  content: '✔';
+  font-size: 18px;
+  left: 3px;
+  line-height: 0.8;
+  position: absolute;
+  top: 7px;
+}

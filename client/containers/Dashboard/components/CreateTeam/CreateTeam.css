@@ -1,0 +1,17 @@
+.a-create-team > .a-title {
+  font-size: 34px;
+  line-height: 34px;
+}
+
+.a-create-team > .a-input {
+  display: block;
+  margin: 5px 0;
+}
+
+.a-create-team > .a-button {
+  width: 100%;
+}
+
+.a-create-team > .a--error {
+  margin: 10px 0;
+}

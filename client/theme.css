@@ -1,0 +1,20 @@
+:root {
+  --cyan: #7adbc0;
+  --orange: #fb9700;
+  --red: #b7002b;
+  --blue: #30334c;
+
+  --white: #fff;
+  --grey: #c0c1c9;
+  --dark: #19222d;
+  --black: #222;
+
+  --success: #62db6e;
+  --failure: #dd5749;
+  --warning: #eaa235;
+}
+
+@custom-media --small (min-width: 576px);
+@custom-media --medium (min-width: 768px);
+@custom-media --large (min-width: 992px);
+@custom-media --extralarge (min-width: 1200px);

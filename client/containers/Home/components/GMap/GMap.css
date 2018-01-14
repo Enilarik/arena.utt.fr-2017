@@ -1,0 +1,13 @@
+.a-gmap {
+  margin: 50px 0;
+  min-height: 300px;
+  position: relative;
+  filter: grayscale() brightness(0.6);
+  transition: .2s filter ease-out;
+}
+
+.a-gmap:hover {
+  filter: initial;
+  transition: .2s filter ease-in;
+  transition-delay: .2s;
+}

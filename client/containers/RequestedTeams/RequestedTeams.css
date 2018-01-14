@@ -1,0 +1,28 @@
+@import '../../theme.css';
+
+.a-requestedteams {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.a-requested-teams__team {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.a-requested-teams__user-message {
+  font-style: italic;
+  padding-left: 10px;
+}
+
+.a-requested-teams__link {
+  display: inline-block;
+  color: var(--cyan);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.a-requested-teams__link:hover {
+  text-decoration: underline;
+}

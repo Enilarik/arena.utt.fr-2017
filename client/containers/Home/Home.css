@@ -1,0 +1,24 @@
+@import '../../theme.css';
+
+.a-home {
+  height: 100%;
+}
+
+.a-home h3.a-title.a-title--center.a-title--white {
+  margin-bottom: 50px;
+}
+
+.a-home .a-timer {
+  margin-bottom: 40px;
+}
+
+.a-home .a-timer + button {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (--large) {
+  .a-home .a-timer {
+    margin-bottom: 100px;
+  }
+}

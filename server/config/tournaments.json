@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Hearthstone",
+    "maxPlayers": 32,
+    "perTeam": 1
+  },
+  {
+    "name": "League Of Legends",
+    "maxPlayers": 160,
+    "perTeam": 5
+  },
+  {
+    "name": "Counter-Strike: Global Offensive",
+    "maxPlayers": 90,
+    "perTeam": 5
+  },
+  {
+    "name": "Overwatch",
+    "maxPlayers": 72,
+    "perTeam": 6
+  }
+]

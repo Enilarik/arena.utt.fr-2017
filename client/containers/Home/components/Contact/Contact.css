@@ -1,0 +1,55 @@
+@import '../../../../theme.css';
+
+.a-part:last-of-type {
+  background-image: radial-gradient(ellipse at center, color(var(--grey) blackness(+150%)) 0%, var(--black) 100%);
+  box-sizing: border-box;
+  height: 330px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.a-contact p {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.a-contact__icons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.a-contact__icons img,
+.a-contact__icons div {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.a-contact__icons > a:not(:first-child) {
+  margin-left: 10px;
+}
+
+@media (--medium) {
+  .a-part:last-of-type {
+    height: 450px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .a-contact__icons > a:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  .a-contact__icons {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+  }
+
+  .a-contact__icons img,
+  .a-contact__icons div {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}

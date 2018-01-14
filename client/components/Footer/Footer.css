@@ -1,0 +1,17 @@
+@import '../../theme.css';
+
+.a-footer {
+  background-color: var(--grey);
+  color: var(--blue);
+  display: flex;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.a-footer__space {
+  flex: 1;
+}
+
+.a-footer > a {
+  color: var(--blue);
+}

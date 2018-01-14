@@ -1,0 +1,33 @@
+@import '../../../../theme.css';
+
+.a-partners img {
+  display: block;
+  margin: 10px auto;
+}
+
+@media (--medium) {
+  .a-partners img {
+    display: initial;
+    margin: 0;
+  }
+
+  .a-partners {
+    margin: 0 auto;
+    max-width: 720px;
+  }
+
+  .a-partners__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .a-partners__row:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .a-partners__row > img:not(:first-child) {
+    margin-left: 30px;
+  }
+}

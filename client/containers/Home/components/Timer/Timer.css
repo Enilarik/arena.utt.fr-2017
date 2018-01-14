@@ -1,0 +1,39 @@
+@import '../../../../theme.css';
+
+.a-timer__date, .a-timer__words {
+  display: flex;
+  justify-content: space-around;
+}
+
+.a-timer__date__months__date, .a-timer__date__days__date {
+  font-family: MotionControl, Impact, sans-serif;
+  font-size: 96px;
+  color: var(--orange);
+}
+
+.a-timer__date__months__word, .a-timer__date__days__word {
+  color: var(--white);
+  font-family: MotionControl, Impact, sans-serif;
+  font-size: 42px;
+  text-align: center;
+}
+
+@media (--medium) {
+  .a-timer__date__months__date, .a-timer__date__days__date {
+    font-size: 144px;
+  }
+
+  .a-timer__date__months__word, .a-timer__date__days__word {
+    font-size: 56px;
+  }
+}
+
+@media (--large) {
+  .a-timer__date__months__date, .a-timer__date__days__date {
+    font-size: 288px;
+  }
+
+  .a-timer__date__months__word, .a-timer__date__days__word {
+    font-size: 72px;
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../theme.css';
+
+.a-dashboard__content {
+  flex: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 20px 0;
+}
+
+.a-dashboard__content > h2 {
+  margin-bottom: 20px;
+}
+
+.a-dashboard__content > h4 {
+  margin: 20px 0;
+}
+
+.a-dashboard__content > h2,
+.a-dashboard__content > h4 {
+  text-align: center;
+}
+
+.a-dashboard__content > .a-list-item .a-title {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.a-dashboard__content > .a-list-item .a-text {
+  font-size: 18px;
+}
+
+@media (--medium) {
+  .a-dashboard__content {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .a-dashboard__content > h4 {
+    margin: 40px 0;
+  }
+}

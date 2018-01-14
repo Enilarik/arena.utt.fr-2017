@@ -1,0 +1,44 @@
+{
+  "app": {
+    "secret": "randomString64bytes",
+    "port": "8080",
+    "isHTTPS": true,
+    "disableLogin": true,
+    "hasOffTournament": true,
+    "hasVisitor": true,
+    "offTournamentLimit": 20,
+    "bcryptLevel": 10,
+    "barcodeLength": 12,
+    "startingDate": "2017-12-08T17:30:00",
+    "endingDate": "2017-12-10T17:00:00"
+  },
+  "db": {
+    "host": "localhost",
+    "name": "arena",
+    "user": "root",
+    "pwd": "",
+    "dialect": "mysql",
+    "resetOnStartup": true
+  },
+  "mail": {
+    "host": "smtp.utt.fr",
+    "port": 25
+  },
+  "log": {
+    "console": "info",
+    "file": "info",
+    "maxLogFileSize": 3000000
+  },
+  "prices": {
+    "plusone": 6,
+    "partner": 10,
+    "base": 15,
+    "ethernet": 7,
+    "shirt": 11
+  },
+  "etupay": {
+    "id": 3,
+    "url": "https://etupay.utt.fr/initiate",
+    "key": "foobar"
+  }
+}

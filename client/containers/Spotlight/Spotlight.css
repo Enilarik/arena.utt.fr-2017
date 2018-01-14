@@ -1,0 +1,106 @@
+@import '../../theme.css';
+
+.a-spotlight {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.a-spotlight__intro {
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.a-spotlight__intro + .a-status-badge {
+  margin: 0 auto;
+}
+
+.a-spotlight__tournaments {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.a-spotlight__tournaments__image {
+  background-size: cover;
+  cursor: pointer;
+  flex: 1;
+  flex-basis: 100%;
+  max-width: 100%;
+  height: 25%;
+  position: relative;
+}
+
+.a-spotlight__tournaments__image--selected {
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 5px var(--cyan);
+}
+
+.a-spotlight__tournaments__image--full:not(.a-spotlight__tournaments__image--selected) {
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 5px var(--warning);
+}
+
+.a-spotlight__tournaments__image--full:not(.a-spotlight__tournaments__image--selected):after {
+  background-color: var(--dark);
+  border-radius: 4px;
+  border: 5px solid var(--failure);
+  color: var(--failure);
+  content: 'Plein';
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  left: 50%;
+  padding: 5px 10px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+}
+
+
+.a-spotlight__tournaments__image--require-team:before {
+  background-color: color(var(--dark) a(0.3));
+  content: '';
+  cursor: default;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+@supports(backdrop-filter: grayscale()) {
+  .a-spotlight__tournaments__image--require-team:before {
+    background-color: transparent;
+    backdrop-filter: grayscale()
+  }
+}
+
+.a-spotlight__tournaments__image--require-team:before {
+  content: 'Équipe requise';
+}
+
+.a-spotlight .a--error {
+  margin-bottom: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (--medium) {
+  .a-spotlight__tournaments {
+    height: 65vh;
+  }
+
+  .a-spotlight__tournaments__image {
+    flex: 1;
+    flex-basis: 50%;
+    max-width: 50%;
+    height: 50%;
+  }
+}

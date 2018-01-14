@@ -1,0 +1,12 @@
+.a-confirm__content {
+  margin-bottom: 10px;
+}
+
+.a-confirm__buttons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.a-confirm__buttons > .a-button {
+  min-width: 0;
+}

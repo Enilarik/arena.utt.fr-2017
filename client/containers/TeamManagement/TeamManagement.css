@@ -1,0 +1,83 @@
+@import '../../theme.css';
+
+.a-teammanagement {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.a-teammanagement__solo {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.a-teammanagement .a-status-badge {
+  margin: 0 auto 30px auto;
+}
+
+.a-teammanagement h3.a-title,
+.a-teammanagement h4.a-title {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.a-teammanagement__warning {
+  margin-bottom: 30px;
+}
+
+.a-teammanagement__warning__sign {
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  border: 1px solid var(--failure);
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: var(--failure);
+}
+
+.a-teammanagement__asking-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.a-teammanagement__asking-message {
+  font-style: italic;
+  padding-left: 10px;
+}
+
+.a-teammanagement__asking-link {
+  color: var(--cyan);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.a-teammanagement__asking-link > span {
+  margin-right: 10px;
+}
+
+.a-team-management__asking-link > span:hover {
+  text-decoration: underline;
+}
+
+.a-teammanagement__kick {
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+}
+
+.a-teammanagement__kick > .a-select {
+  margin-bottom: 15px;
+}
+
+@media (--medium) {
+  .a-teammanagement__warning {
+    margin: 0 auto 30px auto;
+    max-width: 520px;
+  }
+}
+
+@media (--large) {
+  .a-teammanagement__warning__sign {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../theme.css';
+
+.a-modal-container {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.a-modal {
+  background: var(--dark);
+  border-radius: 2px;
+  border: 1px solid color(var(--white) a(50%));
+  box-shadow: 0 2px 4px 0 color(var(--black) a(60%));
+  left: 50%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+}
+
+.a-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1500;
+}

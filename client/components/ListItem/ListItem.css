@@ -1,0 +1,53 @@
+@import '../../theme.css';
+
+.a-list-item {
+  background-color: var(--dark);
+  border: 1px solid transparent;
+  box-shadow: 0 2px 4px 0 color(#000 a(0.5));
+  margin: 10px;
+  padding: 15px 10px;
+  transition: .1s border ease-out;
+}
+
+.a-list-item--clickable {
+  cursor: pointer;
+}
+
+.a-list-item--clickable:hover {
+  border: 1px solid var(--cyan);
+  transition: .1s border ease-in;
+}
+
+.a-list-item--with-arrow, .a-list-item--with-price {
+  align-items: center;
+  display: flex;
+}
+
+.a-list-item__content {
+  flex: 1;
+}
+
+.a-list-item__price {
+  color: var(--cyan);
+  text-shadow: none;
+  font-size: 48px !important;
+  font-weight: bold;
+}
+
+@media (--medium) {
+  .a-list-item {
+    padding: 20px;
+  }
+
+  .a-list-item__arrow-container {
+    margin: 0 15px;
+  }
+
+  .a-list-item__arrow-container__arrow {
+    border-right: 5px solid color(#fff a(0.9));
+    border-bottom: 5px solid color(#fff a(0.9));
+    width: 25px;
+    height: 25px;
+    transform: rotate(-45deg);
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../theme.css';
+
+.a-teamfinder {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.a-teamfinder__button-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.a-teamfinder__list > .a-text {
+  margin: 30px auto;
+}
+
+.a-teamfinder .a-list-item .a-title {
+  font-size: 34px;
+  line-height: 34px;
+}
+
+.a-teamfinder .a-confirm .a-title {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.a-teamfinder .a-confirm .a-input {
+  margin: 10px 0 5px 0;
+}

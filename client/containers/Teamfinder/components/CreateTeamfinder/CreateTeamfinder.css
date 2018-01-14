@@ -1,0 +1,25 @@
+@import '../../../../theme.css';
+
+.a-create-teamfinder > .a-title {
+  font-size: 34px;
+  line-height: 34px;
+}
+
+.a-create-teamfinder > .a-input {
+  display: block;
+  margin: 5px 0;
+}
+
+.a-create-teamfinder > .a-button {
+  width: 100%;
+}
+
+.a-create-teamfinder > .a--error {
+  margin: 10px 0;
+}
+
+@media (--medium) {
+  .a-create-teamfinder {
+    min-width: 340px;
+  }
+}

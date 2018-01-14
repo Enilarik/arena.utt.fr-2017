@@ -1,0 +1,78 @@
+@import '../../theme.css';
+
+.a-title {
+  font-family: Impact, sans-serif;
+  margin: 0;
+  text-shadow: 2px 3px 0 color(var(--red) a(50%));
+  text-transform: uppercase;
+}
+
+.a-title--white {
+  color: var(--white);
+}
+
+.a-title--orange {
+  color: var(--orange);
+}
+
+.a-title--blue {
+  color: var(--cyan);
+  text-shadow: none;
+}
+
+.a-title--center {
+  text-align: center;
+}
+
+.a-motion-loaded .a-title {
+  font-family: MotionControl, Impact, sans-serif;
+}
+
+h1.a-title {
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 0 color(var(--orange) a(50%));
+}
+
+.a-motion-loaded h1.a-title {
+  font-size: 122px;
+  line-height: 122px;
+  letter-spacing: 0;
+}
+
+h2.a-title {
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: 2px;
+}
+
+.a-motion-loaded h2.a-title {
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: 0;
+}
+
+h3.a-title {
+  font-size: 42px;
+  line-height: 42px;
+  letter-spacing: 1px;
+}
+
+.a-motion-loaded h3.a-title {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0;
+}
+
+h4.a-title {
+  font-size: 42px;
+  line-height: 42px;
+  letter-spacing: 1px;
+}
+
+.a-motion-loaded h3.a-title {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0;
+}

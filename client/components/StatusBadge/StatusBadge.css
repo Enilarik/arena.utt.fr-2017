@@ -1,0 +1,35 @@
+@import '../../theme.css';
+
+.a-status-badge {
+  align-items: center;
+  border-radius: 55px;
+  box-shadow: 0 2px 4px 0 color(var(--black) a(0.5));
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  height: 55px;
+  justify-content: center;
+  max-width: calc(90vw - 20px);
+  width: 100%;
+}
+
+.a-status-badge--success {
+  background-color: var(--success);
+  color: var(--black);
+}
+
+.a-status-badge--warning {
+  background-color: var(--warning);
+  color: var(--black);
+}
+
+.a-status-badge--error {
+  background-color: var(--failure);
+  color: var(--white);
+}
+
+@media (--medium) {
+  .a-status-badge {
+    max-width: 475px;
+  }
+}

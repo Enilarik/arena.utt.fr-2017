@@ -1,0 +1,20 @@
+@import '../../theme.css';
+
+.a-text {
+  margin: 0 auto;
+  max-width: calc(100vw - 20px);
+  text-align: justify;
+}
+
+.a-text--left-aligned {
+  text-align: left;
+}
+
+.a-text--center-aligned {
+  text-align: center;
+}
+
+.a-text mark {
+  background-color: inherit;
+  color: var(--orange);
+}

@@ -1,0 +1,15 @@
+@import '../../theme.css';
+
+.a-input {
+  background: color(var(--blue) a(40%));
+  border: 1px solid color(var(--white) a(30%));
+  box-shadow: 0 2px 4px 0 color(var(--black) a(60%));
+  box-sizing: border-box;
+  color: var(--white);
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.a-input:focus {
+  outline: 0;
+}

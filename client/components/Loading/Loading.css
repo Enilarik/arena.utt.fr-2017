@@ -1,0 +1,51 @@
+@import '../../theme.css';
+
+.a-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.a-loading__animation {
+  height: 2px;
+  position: relative;
+  width: 200px;
+}
+
+.a-loading__animation > div {
+  height: 2px;
+  position: absolute;
+  width: 50px;
+}
+
+.a-loading__animation > div:after {
+  background-color: color(#000 a(0.2));
+  content: ' ';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.a-loading__aniamtion__rect1 {
+  background-color: var(--blue);
+  left: 0;
+}
+
+.a-loading__aniamtion__rect2 {
+  background-color: var(--cyan);
+  left: 50px;
+}
+
+.a-loading__aniamtion__rect3 {
+  background-color: var(--red);
+  left: 100px;
+}
+
+.a-loading__aniamtion__rect4 {
+  background-color: var(--orange);
+  left: 150px;
+}
+

@@ -1,0 +1,53 @@
+@import '../../theme.css';
+
+.a-editinfos {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.a-editinfos .a-text {
+  margin-bottom: 30px;
+}
+
+.a-editinfos__form-container {
+  background-color: var(--dark);
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.a-editinfos__form {
+  margin: 0 auto;
+}
+
+.a-editinfos__form .a-input {
+  margin: 5px 0 20px 0;
+  width: 240px;
+}
+
+.a-editinfos .a--success {
+  margin-top: 10px;
+}
+
+@media (--medium) {
+  .a-editinfos__form {
+    max-width: 350px;
+  }
+
+  .a-editinfos__form .a-input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
+
+  .a-editinfos__form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .a-editinfos__form .a-button {
+    min-width: 175px;
+  }
+}
