@@ -1,3 +1,0 @@
-User-agent: *
-Sitemap: https://arena.utt.fr/sitemap.xml
-Host: https://arena.utt.fr
