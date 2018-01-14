@@ -1,0 +1,7 @@
+node_modules
+
+server/config/config.json
+*.out
+
+public/**/*.*
+!public/index.html
